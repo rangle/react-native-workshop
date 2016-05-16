@@ -6,6 +6,7 @@ import {
 import Immutable, { List } from 'immutable';
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import KeyboardSpacer from 'react-native-keyboard-spacer';
 import SearchBar from '../components/SearchBar';
 import MediaObject from '../components/MediaObject';
 import Loader from '../components/Loader';
@@ -45,6 +46,8 @@ class Pokedex extends Component {
             enableEmptySections />
 
           <SearchBar onChange={ filter } value={ query } />
+
+          <KeyboardSpacer />
 
         </View>
       </Loader>
