@@ -1,4 +1,4 @@
-![rangle.io](../img/intro.png)
+![rangle.io](/img/intro.png)
 
 ## Who is this material for?
 This material is for those who are familiar with ReactJS and are willing to dive into developing mobile apps with [React Native](https://facebook.github.io/react-native). For this course we assume that our audience also has solid knowledge of JavaScript, ES6 syntax, [Redux](https://github.com/reactjs/redux) and CSS.
