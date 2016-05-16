@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "versions",
+    "highlight",
+    "spoiler"
+  ],
+  "pluginsConfig": {
+    "versions": {
+      "type": "branches",
+      "includeFilepath": false
+    }
+  },
+  "structure": {
+    "readme": "INTRO.md"
+  }
+}
