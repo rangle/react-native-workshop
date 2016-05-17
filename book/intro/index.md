@@ -39,4 +39,4 @@ $ npm install -g react-native-cli
 ## Setup Native SDKs
 
 - For iOS install Xcode from the OS X App Store.
-- For Android follow these instructions [here](https://facebook.github.io/react-native/docs/android-setup.html).
+- For Android follow these instructions [here](https://facebook.github.io/react-native/docs/getting-started.html).
