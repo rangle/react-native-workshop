@@ -5,4 +5,5 @@
   * [Debugging](book/intro/debugging.md)
 * [Navigation](book/navigation/navigation-intro.md)
   * [Navigation Experimental](book/navigation/navigation-experimental-details.md)
-  * [Building our Navigation](book/navigation/building-our-navigation.md)
+  * [Creating Some Helpers](book/navigation/navigation-helpers.md)
+  * [The Navigator Component](book/navigation/navigation-component.md)
