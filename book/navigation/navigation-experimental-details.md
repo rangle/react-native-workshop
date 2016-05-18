@@ -28,9 +28,9 @@ you can get this via the `mapStateToProps` and `connect` functions.
 
 This component will handle displaying information about the current state, as well as providing a simple "back" button to return to previous states in a header at the top of your app.
 
-*show an image of the navigation header here at its top level state*
+![top-nav-state](/img/top-nav-state.png)
 
-*show and image of the navigation at a nested state, with the back button*
+![second-nav-state](/img/second-nav-state.png)
 
 This component takes a prop called `renderTitleComponent`. This prop takes a function to setup an individual states title. It should return a `NavigationExperimental.Header.Title` component with the text you wish to display.
 
