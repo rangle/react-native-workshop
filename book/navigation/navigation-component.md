@@ -83,7 +83,7 @@ The `_renderScene` method is in charge of setting up the view around our active 
 
 Finally, we are rendering out our `NavigationAnimatedView` passing it our navigations state, a simple style declaration to cause the navigation to fill whatever space it can, and then we are passing it our appropriate helper functions for rendering our view.
 
-Finally let's tell react about our components props and export the connected component.
+Now let's tell react about our components props and export the connected component!
 
 ```javascript
 Navigator.propTypes = {
@@ -100,4 +100,28 @@ export default connect(
   helpers.mapStateToProps,
   helpers.mapDispatchToProps,
 )(Navigator);
+```
+
+## Hook Our Navigator Up
+
+Our final step is to import our newly created Navigator component and plug it into our root container.
+Edit the `src/containers/Root.js` file to reflect the following:
+
+```javascript
+import React from 'react';
+import {Provider} from 'react-redux';
+import createStore from '../store/configureStore';
+import Navigator from './Navigator';
+
+const store = createStore();
+
+const Root = () => {
+  return (
+    <Provider store={store}>
+      <Navigator />
+    </Provider>
+  );
+};
+
+export default Root;
 ```
