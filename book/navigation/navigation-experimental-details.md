@@ -1,6 +1,6 @@
 ## NavigationRootContainer
 
-The `NavigationRootContainer` is the component that handles your applications navigation state.
+The `NavigationRootContainer` is the component that handles your application's navigation state.
 Normally you would pass a reducer to this component and it will handle returning a new navigation
 state when it's onNavigate method has been called.
 
@@ -14,7 +14,7 @@ When using redux, this component isn't necessary, because we are already using r
 This component wraps the rest of your navigation, and provides simple sliding animations for your navigation
 "stacks". It requires a few different props:
 
-- `navigationState` -> This is where you can pass in your applications current navigation state. When using redux,
+- `navigationState` -> This is where you can pass in your application's current navigation state. When using redux,
 you can get this via the `mapStateToProps` and `connect` functions.
 
 - `onNavigate` -> This is a function that is used as a reducer, and it is responsible for "dispatching" actions to update your navigation's state.

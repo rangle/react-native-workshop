@@ -1,6 +1,6 @@
 # Our Navigator component
 
-Our application is going to use the navigator and its state to decide which one our of container views to display. We'll use our navigator in the root view of our application and let it handle the logic for switching are views as needed.
+Our application is going to use the navigator and its state to decide which one our of container views to display. We'll use our navigator in the root view of our application and let it handle the logic for switching our views as needed.
 
 Let's start by creating a file `index.js` in `src/containers/Navigator/` and setup our imports:
 
