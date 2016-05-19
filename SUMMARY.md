@@ -13,3 +13,4 @@
   * [Creating Some Helpers](book/navigation/navigation-helpers.md)
   * [The Navigator Component](book/navigation/navigation-component.md)
 * [Creating the Main Listing](book/listing/creating-the-listing.md)
+* [Filtering](book/selectors/selectors.md)
