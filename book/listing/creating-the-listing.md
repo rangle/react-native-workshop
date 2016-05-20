@@ -6,7 +6,7 @@ We'll chiefly be using a [**ListView**](https://facebook.github.io/react-native/
 
 Some implementation-specific details of **ListView**: A minimal implementation requires you to create a [ListView.DataSource](https://facebook.github.io/react-native/docs/listviewdatasource.html), populate it with a simple array of data blobs, and instantiate your ListView component with said DataSource. It also requires you to define a `renderRow` callback, which will take individual blobs from your DataSource array, and return them as renderable components.
 
-```
+```javascript
 class Pokedex extends Component {
   constructor(props) {
     super(props);
@@ -59,7 +59,7 @@ We've already passed `renderRow` into our ListView component above, and now we n
 Note: You'll also need to define your `goToPokemonDetail` action if you haven't already.
 
 
-```
+```javascript
 function renderRow(goTo, pokemon, sId, id) {
   const POKEMON_STATE = {
     title: pokemon.get('name'),
@@ -89,7 +89,7 @@ Now that we have the information we need, we'll render it out in our MediaObject
 
 * **Image** is a core React Native component for loading local or remote images with one neat trick: It's non-blocking. That means we can feed our image into our layout without too much concern for UI stutters or hiccups.
 
-```
+```javascript
 //Define a placeholder image to be used in the case of a non-existent external resource
 const placeholder = require('../assets/who.jpg');
 
@@ -117,7 +117,7 @@ const MediaObject = ({ index, action, text, imageUrl }) => {
 
 Again, don't forget to do housekeeping like defining your styles and properly exporting your component as a module here. We've also used a bgColor function above that you can define thusly:
 
-```
+```javascript
 function bgColor(idx) {
   return {
     backgroundColor: idx % 2 !== 0 ? clrs.white : clrs.lighterGray,
@@ -137,7 +137,7 @@ This one's easy.
 
 Add a new custom SearchBar component to your Pokedex component. To complete it, you'll need to use a native [**TextInput**](https://facebook.github.io/react-native/docs/textinput.html), which works similarly to the web input you should be familiar with, tracking a value and responding to `onChangeText` events:
 
-```
+```javascript
 <TextInput style={ styles.input }
         value={ query }
         onChangeText={ text => onChange(text) } />
@@ -147,7 +147,7 @@ The virtual keyboards used on most on mobile devices pose unique layout challeng
 
 For this, we'll use Andrew Hurst's excellent [react-native-keyboard-spacer](https://github.com/Andr3wHur5t/react-native-keyboard-spacer). You can place it next to your SearchBar like so:
 
-```
+```javascript
 <SearchBar onChange={ filter } value={ query } />
 <KeyboardSpacer />
 ```
