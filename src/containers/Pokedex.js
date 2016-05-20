@@ -10,7 +10,6 @@ import { connect } from 'react-redux';
 import KeyboardSpacer from 'react-native-keyboard-spacer';
 import SearchBar from '../components/SearchBar';
 import MediaObject from '../components/MediaObject';
-import Loader from '../components/Loader';
 import clrs from '../utils/clrs';
 import * as actions from '../actions';
 import { filteredPokemon } from '../selectors';
@@ -37,23 +36,21 @@ class Pokedex extends Component {
 
   render() {
     const { pokemon } = this.state;
-    const { goToPokemonDetail, filter, query, ready } = this.props;
+    const { goToPokemonDetail, filter, query } = this.props;
 
     return (
-      <Loader show={ !ready }>
-        <View style={ styles.container }>
+      <View style={ styles.container }>
 
-          <ListView dataSource={ pokemon }
-            style={ styles.listView }
-            renderRow={ (...args) => renderRow(goToPokemonDetail, ...args) }
-            enableEmptySections />
+        <ListView dataSource={ pokemon }
+          style={ styles.listView }
+          renderRow={ (...args) => renderRow(goToPokemonDetail, ...args) }
+          enableEmptySections />
 
-          <SearchBar onChange={ filter } value={ query } />
+        <SearchBar onChange={ filter } value={ query } />
 
-          { Spacer }
+        { Spacer }
 
-        </View>
-      </Loader>
+      </View>
     );
   }
 }
@@ -86,7 +83,7 @@ export default connect(
 
 function mapStateToProps(state) {
   return {
-    pokemon: filteredPokemon(state),
+    pokemon: state.pokemon.get('all'),
     query: state.pokemon.get('query'),
     ready: state.pokemon.get('ready'),
   };
