@@ -2,6 +2,7 @@ import {
   StyleSheet,
   View,
   ListView,
+  Platform,
 } from 'react-native';
 import Immutable, { List } from 'immutable';
 import React, { Component, PropTypes } from 'react';
@@ -13,6 +14,8 @@ import Loader from '../components/Loader';
 import clrs from '../utils/clrs';
 import * as actions from '../actions';
 import { filteredPokemon } from '../selectors';
+
+const Spacer = Platform.OS === 'ios' ? <KeyboardSpacer /> : null;
 
 
 class Pokedex extends Component {
@@ -47,7 +50,7 @@ class Pokedex extends Component {
 
           <SearchBar onChange={ filter } value={ query } />
 
-          <KeyboardSpacer />
+          { Spacer }
 
         </View>
       </Loader>
