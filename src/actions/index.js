@@ -1,4 +1,3 @@
-import { GOTO_ROUTE, ROUTES } from '../constants';
 import { getAllPokemon, getPokemon } from '../api';
 import {
   CATCH_EM_ALL,
@@ -8,27 +7,6 @@ import {
   CHOOSING_FAILED,
   FILTER,
 } from '../constants';
-
-export function goToPokemonDetail({ title, url }) {
-  return {
-    type: GOTO_ROUTE,
-    payload: ROUTES.POKEMON_DETAIL(title, url),
-  };
-}
-
-export function gotoPokedex() {
-  return {
-    type: GOTO_ROUTE,
-    payload: ROUTES.POKEDEX,
-  };
-}
-
-export function onNavigate(payload) {
-  return {
-    type: GOTO_ROUTE,
-    ...payload,
-  };
-}
 
 export function catchEmAll() {
   return dispatch => {
