@@ -14,7 +14,6 @@
   * [The Navigator Component](book/navigation/navigation-component.md)
 * [Creating the Main Listing](book/listing/creating-the-listing.md)
 * [Filtering](book/selectors/selectors.md)
-* [Pokemon Details](book/scrollView/scroll-view-intro.md)
 * [Animation](book/animation/index.md)
   * [LayoutAnimation](book/animation/layout-animation.md)
   * [Animated](book/animation/animated/index.md)
@@ -24,3 +23,4 @@
     * [More Animated](book/animation/animated/more-animated.md)
   * [Resources](book/animation/resources.md)
   * [Exercise](book/animation/exercise.md)
+* [Pokemon Details](book/scrollView/scroll-view-intro.md)
