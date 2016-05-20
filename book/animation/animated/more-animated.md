@@ -17,6 +17,19 @@ const marginLeftAnimation = this.state.animatedValue.interpolate({
 });
 ```
 
+| Input  | Output |
+| ------ | ------ |
+| -400  | 450     |
+| -300  | 300     |
+| -200	| 150     |
+| -100	| 0       |
+| -50	  | 0.5     |
+| 0	    | 1       |
+| 50	  | 0.5     |
+| 100	  | 0       |
+| 101	  | 0       |
+| 200	  | 0       |
+
 
 ## Composing Animations
 
