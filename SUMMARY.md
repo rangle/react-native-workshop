@@ -24,3 +24,4 @@
   * [Resources](book/animation/resources.md)
   * [Exercise](book/animation/exercise.md)
 * [Pokemon Details](book/scrollView/scroll-view-intro.md)
+* [Working with MapView](book/mapview/working-with-mapview.md)
