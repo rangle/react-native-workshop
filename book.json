@@ -2,5 +2,10 @@
     "plugins": [
         "theme-default"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+        "theme-default": {
+            "styles": "",
+            "showLevel": "true"
+        }
+    }
 }
