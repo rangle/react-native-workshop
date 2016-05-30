@@ -1,11 +1,11 @@
 {
-  "plugins": [
-    "highlight",
-    "spoiler"
-  ],
-  "pluginsConfig": {
-  },
-  "structure": {
-    "readme": "INTRO.md"
-  }
+    "plugins": [
+        "highlight",
+        "spoiler",
+        "theme-default"
+    ],
+    "pluginsConfig": {},
+    "structure": {
+        "readme": "INTRO.md"
+    }
 }
