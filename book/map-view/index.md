@@ -1,8 +1,8 @@
-## Extra Credit: Working with MapView and Third-party Components
+## Working with MapView and Third-party Components
 
 While you won't be using it in this project, the MapView is a good example of a common element that you'll use in a lot of other projects, and is worth taking some time with.
 
-At its most basic implementation, a MapView will render and interactive map in a defined area.
+At its most basic implementation, a MapView will render an interactive map in a defined area.
 
 ```javascript
 <MapView
@@ -81,7 +81,7 @@ render() {
 }
 ```
 
-However, implmentations of advanced features like markers are different from the default MapView, with `react-native-maps` choosing to opt for a nested component format:
+However, implementations of advanced features like markers are different from the default MapView, with `react-native-maps` choosing to opt for a nested component format:
 
 
 ```js
