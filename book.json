@@ -1,16 +1,15 @@
 {
-    "plugins": [
-        "highlight",
-        "spoiler",
-        "theme-default"
-    ],
-    "pluginsConfig": {
-        "theme-default": {
-            "styles": "",
-            "showLevel": "true"
-        }
-    },
-    "structure": {
-        "readme": "INTRO.md"
+  "plugins": [
+    "highlight",
+    "theme-default"
+  ],
+  "theme": "theme-default",
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": "true"
     }
+  },
+  "structure": {
+    "readme": "INTRO.md"
+  }
 }
