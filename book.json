@@ -4,7 +4,12 @@
         "spoiler",
         "theme-default"
     ],
-    "pluginsConfig": {},
+    "pluginsConfig": {
+        "theme-default": {
+            "styles": "",
+            "showLevel": "true"
+        }
+    },
     "structure": {
         "readme": "INTRO.md"
     }
