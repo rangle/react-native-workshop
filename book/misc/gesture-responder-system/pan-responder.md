@@ -9,7 +9,7 @@ The `nativeEvent` provides you all the touches and their locations. Whereas, `ge
 
 ![](/img/pan-responder.gif)
 
-Run the example: [rnplay.org/apps/xdHpQA](https://rnplay.org/apps/xdHpQA)
+Run the example: [rnplay.org/apps/Sxb2tQ](https://rnplay.org/apps/Sxb2tQ)
 
 ```js
 import React, { Component } from 'react';
