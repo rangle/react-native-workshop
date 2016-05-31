@@ -3,8 +3,8 @@
 <figure style="margin-bottom: 2rem; text-align: center;">
   <img src="/img/flexbox.jpg" alt="flexbox terminology">
   <figcaption>
-    <small>
-      image from <a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties">
+    <small style="font-weight: bold;">
+      Image from <a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties">
         scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
       </a>
     </small>

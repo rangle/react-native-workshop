@@ -43,8 +43,7 @@
 
 ---
 
-* [MapView](book/map-view/index.md)
-
----
-
-* [Testing](book/testing/index.md)
+* [MapView](book/misc/map-view.md)
+* [Testing](book/misc/testing.md)
+* [Gesture Responder System](book/misc/gesture-responder-system/index.md)
+  * [PanResponder](book/misc/gesture-responder-system/pan-responder.md)
