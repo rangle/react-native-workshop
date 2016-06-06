@@ -1,6 +1,6 @@
 ## Building the Main Listing
 
-Now that we have our navigator in place, we can start building out our components. First on the menu will be the Pokedex component which we defined as the default in our Navigator, and which we'll define as a container component at `/src/containers/Pokedex.js`.
+Now that we have our navigator in place, we can start building out our components. First on the menu will be the Pokedex component defined as the default in our Navigator, and we'll define Pokedex as a container component at `/src/containers/Pokedex.js`.
 
 We'll chiefly be using a [**ListView**](https://facebook.github.io/react-native/docs/listview.html), a React Native core component that extends a more primitive [**ScrollView**](https://facebook.github.io/react-native/docs/scrollview.html), and primarily allows us to efficiently display long lists of data.
 
@@ -54,7 +54,7 @@ We'll also do some housekeeping. Don't forget to:
 
 ### Finally, let's define how our rows get rendered in our ListView.
 
-We've already passed `renderRow` into our ListView component above, and now we need to define it. We'll pass all the information we need to a MediaObject subcomponent that we'll create in a moment.
+We've already passed `renderRow` into our ListView component above, and now we need to define it in Pokedex. We'll pass all the information we need to a MediaObject subcomponent that we'll create in a moment.
 
 Note: You'll also need to define your `goToPokemonDetail` action if you haven't already.
 
@@ -83,7 +83,7 @@ function renderRow(goTo, pokemon, sId, id) {
 }
 ```
 
-Now that we have the information we need, we'll render it out in our MediaObject component, which we can place at `/src/components/MediaObject.js`. We'll use a couple of new pieces there that we should touch on:
+Now that we have the information we need, we'll render it out in our MediaObject component, which we can place at `/src/components/MediaObject.js`. We'll use a couple of new pieces:
 
 * **TouchableOpacity** is a wrapper used for making views respond properly to touches. You can think of it as onClick, but with a visual feedback mechanism added in. Here, we'll use the onPress mechanism to react to touches and redirect the user to the desired pokemon details page.
 
@@ -115,7 +115,7 @@ const MediaObject = ({ index, action, text, imageUrl }) => {
 
 ```
 
-Again, don't forget to do housekeeping like defining your styles and properly exporting your component as a module here. We've also used a bgColor function above that you can define thusly:
+Again, don't forget to do housekeeping like defining your styles and properly exporting your component as a module here. We've also used a bgColor function above that you can define:
 
 ```javascript
 function bgColor(idx) {
@@ -135,7 +135,7 @@ That's it! Everything's in place. Just one more thing left to do.
 
 This one's easy.
 
-Add a new custom SearchBar component to your Pokedex component. To complete it, you'll need to use a native [**TextInput**](https://facebook.github.io/react-native/docs/textinput.html), which works similarly to the web input you should be familiar with, tracking a value and responding to `onChangeText` events:
+Add a new custom SearchBar component to your Pokedex container. To complete it, you'll need to use a native [**TextInput**](https://facebook.github.io/react-native/docs/textinput.html), which works similarly to the web input you should be familiar with, tracking a value and responding to `onChangeText` events:
 
 ```javascript
 <TextInput style={ styles.input }
@@ -148,7 +148,7 @@ The virtual keyboards used iOS devices pose unique layout challenges as they req
 For this, we'll use Andrew Hurst's excellent [react-native-keyboard-spacer](https://github.com/Andr3wHur5t/react-native-keyboard-spacer). We'll need to start by importing the `Platform` utility from React Native.
 
 ```javascript
-// ...
+// ... src/containers/pokedex.js
 
 import {
   StyleSheet,

@@ -76,7 +76,7 @@ class Navigator extends Component {
 There is a lot going on here, so let's take a minute to go through this one step at a time.
 
 We start by calling the `catchEmAll` action in our `componentWillMount` method. This is just to get our app setup to display our lists of pokemon in the views we'll be creating later.
-`_getActiveScene` is a method we'll pass to the `NavigationAnimatedView` in order to determine which container component to render based off the current state of our navigation.
+`_getActiveScene` is a method we'll pass to the `NavigationAnimatedView` in order to determine which container component to render based off the current navigation state.
 
 After that, we're returning a `NavigationCard` component in our `_renderCard` method. This is used by the `NavigationAnimatedView` for rendering a single card in our navigation state's card stack.
 The `_renderScene` method is in charge of setting up the view around our active scene. In this case we're just creating a simple view that accommodates for the height of our navigation header, and sets the status bar style to the default look and feel (black text with light background).
