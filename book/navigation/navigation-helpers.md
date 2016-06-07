@@ -22,7 +22,7 @@ const { Header: NavigationHeader } = NavigationExperimental;
 Let's export some functions for our navigator component to make use of. To start, we'll configure the functions we'll use to setup our components props and actions with `connect`
 
 
-*"src/containers/Navigator/navigator-helpers.js"*
+`src/containers/Navigator/navigator-helpers.js`
 ```javascript
 export function mapStateToProps(state) {
   return {

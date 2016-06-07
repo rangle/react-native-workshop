@@ -20,6 +20,6 @@ React Native provides native polyfills for the following APIs:
 - Flexbox layout module
 - `ShadowPropTypesIOS` so that you can define shadows in CSS
 - Geolocation which follows the web spec: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation
-- Network: fetch, XHR & WebSockets
+- Network fetch, XHR & WebSockets
 - Timers: `setTimeout`, `requestAnimationFrame`, `setInterval`, etc.
 - Named colors in CSS

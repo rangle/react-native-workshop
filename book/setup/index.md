@@ -24,7 +24,7 @@ Alternatively you can download an installer from: [nodejs.org/en/download](https
 
 #### Install Watchman
 This tool will be used by React Native to detect changes of your code and auto
-reload your application.
+reload your application. **Install watchman via brew, and not npm.**
 
 ```sh
 $ brew install watchman
@@ -38,5 +38,5 @@ $ npm install -g react-native-cli
 
 ## Setup Native SDKs
 
-- For iOS install Xcode from the OS X App Store.
+- For iOS install [Xcode](https://developer.apple.com/xcode/) from the OS X App Store.
 - For Android follow these instructions [here](https://facebook.github.io/react-native/docs/getting-started.html).

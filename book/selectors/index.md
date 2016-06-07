@@ -2,7 +2,7 @@
 
 We're going to want to filter our Pokemon listing data using our search component. We could do this using our actions & reducers, however it is a better idea to implement something called a `Selector`.
 
-To do this, we can make use of the library `reselect`. To install it, just run:
+To do this, we can make use of the library [`reselect`](https://github.com/reactjs/reselect). To install it, just run:
 ```bash
 npm install --save reselect
 ```

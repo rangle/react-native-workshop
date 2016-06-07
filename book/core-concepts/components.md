@@ -17,6 +17,7 @@ Allows you to efficient display vertically scrolling lists of changing data. It 
 
 
 ## Platform Specific Behaviour
+To support platform specific functionality, React Native determines the component to use based on the platform and a simple naming convention:
 
 ```js
 // MyComponent.ios.js
