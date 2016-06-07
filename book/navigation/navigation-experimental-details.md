@@ -5,7 +5,7 @@ Normally you would pass a reducer to this component and it will handle returning
 state when it's onNavigate method has been called.
 
 There is also the `NavigationContainer.create` method, which acts similar to react-redux's `connect` method.
-It does not pull in any state however, but does pass the component it wraps an `onNavigate` function.
+It does not pull in any state however, it passes an `onNavigate` function to the component it wraps.
 
 When using Redux, this component isn't necessary, because we are already using Redux to handle our state!
 
