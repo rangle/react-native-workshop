@@ -115,7 +115,7 @@ const MediaObject = ({ index, action, text, imageUrl }) => {
 
 ```
 
-Again, don't forget to do housekeeping like defining your styles and properly exporting your component as a module here. We've also used a bgColor function above that you can define:
+Again, don't forget to do housekeeping like defining your styles and properly exporting your component as a module here. We've also used a bgColor function above that you can define thusly:
 
 ```javascript
 function bgColor(idx) {
