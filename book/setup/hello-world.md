@@ -3,7 +3,7 @@
 To initiate a new React Native project you need to run: `react-native init <ProjectName>`. For this workshop, we have already done that for you and setup a skeleton project. To get started:
 
 ```sh
-$ git clone https://github.com/winkerVSbecks/react-native-workshop.git
+$ git clone https://github.com/rangle/react-native-workshop.git
 $ cd react-native-workshop
 $ npm install
 ```
