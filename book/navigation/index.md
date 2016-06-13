@@ -93,9 +93,11 @@ const { Reducer: NavigationReducer } = NavigationExperimental;
 const navigatorReducer = NavigationReducer.StackReducer({
   getPushedReducerForAction: action => {
     if (action.type === GOTO_ROUTE) {
+      /* The below line is confusing as other NavigationReducer's 
+      may consist of a state, however for StackReducer, it is always null
+      so the action.payload is taken as the next route */
       return state => state || action.payload;
     }
-
     return null;
   },
   getReducerForState: initialState => state => state || initialState,
