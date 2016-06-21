@@ -1,6 +1,6 @@
 # Styles
 
-React Native allows you to style components using limited CSS properties as inline styles. For layout only the flexbox module and absolute positioning is available. The [style properties](https://facebook.github.io/react-native/releases/next/docs/style.html#supported-properties) are split into five categories:
+React Native allows you to style components using a subset of CSS properties as inline styles. For layout only the flexbox module and absolute positioning is available. The [style properties](https://facebook.github.io/react-native/releases/next/docs/style.html#supported-properties) are split into five categories:
 
 1. View Properties
 2. Image Properties
