@@ -9,7 +9,7 @@ See the [navigator comparison documentation for more information.](https://faceb
 
 In this workshop we will be working with a third option: `NavigationExperimental`.
 `NavigationExperimental` differs from the `Navigator` component in that it attempts
-to be more like Redux using a single-direction flow of data and reducers to manage its state. 
+to be more like Redux using a single-direction flow of data and reducers to manage its state.
 
 _At the time of this writing, `NavigationExperimental` is replacing the `Navigator`. 
 The documentation will be updated to reflect [this](https://github.com/ericvicenti/navigation-rfc/blob/master/Docs/NavigationOverview.md)._
@@ -23,7 +23,7 @@ our redux store will need to use to properly manage our state.
 Let's get started by adding a few new constants to our `src/constants/index.js` file:
 
 ```javascript
-// src/constants/index.js
+// src/constants/index.js /
 
 export const GOTO_ROUTE = '@@navigator/GOTO_ROUTE';
 export const ROUTE_IDS = {

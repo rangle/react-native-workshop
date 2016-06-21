@@ -12,3 +12,7 @@ An important prop to be aware of for the `ScrollView` is the `contentContainerSt
 You can [find out more about the ScrollView's props here.](https://facebook.github.io/react-native/docs/scrollview.html)
 
 Using the `ScrollView` component, let's setup the display for our Pokemon's abilities and stats!
+
+<div style="text-align:center">
+    <img src="../../img/pokemonDetails.png" style="width: 50%; border: none;">
+</div>
