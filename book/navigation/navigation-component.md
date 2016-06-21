@@ -125,3 +125,13 @@ const Root = () => {
 
 export default Root;
 ```
+
+## Summary
+
+These are the steps we went through to setup the navigation:
+
+1. Created actions and routes configuration
+2. Defined redux action creators (`goToPokemonDetail`, `gotoPokedex`, `onNavigate`)
+3. Setup `navigatorReducer`
+4. Defined navigation container helpers (`mapStateToProps, mapDispatchToProps, applyAnimation, renderHeader, renderTitle`)
+5. Inserted `navigator` container as root component
