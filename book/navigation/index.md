@@ -23,7 +23,7 @@ our redux store will need to use to properly manage our state.
 Let's get started by adding a few new constants to our `src/constants/index.js` file:
 
 ```javascript
-// src/constants/index.js
+// src/constants/index.js /
 
 export const GOTO_ROUTE = '@@navigator/GOTO_ROUTE';
 export const ROUTE_IDS = {
