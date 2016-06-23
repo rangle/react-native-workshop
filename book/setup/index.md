@@ -19,7 +19,7 @@ $ brew update && brew upgrade
 ```sh
 $ brew install node
 ```
-Alternatively you can download an installer from: [nodejs.org/en/download](https://nodejs.org/en/download).
+Alternatively you can download an installer from: [nodejs.org/en/download](https://nodejs.org/en/download). Recommend to have `Node >=4.0` and `NPM >=3.0`
 
 
 #### Install Watchman
