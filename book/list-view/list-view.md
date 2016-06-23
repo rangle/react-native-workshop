@@ -2,6 +2,8 @@
 
 Some implementation-specific details of **ListView**: A minimal implementation requires you to create a [ListView.DataSource](https://facebook.github.io/react-native/docs/listviewdatasource.html), populate it with a simple array of data blobs, and instantiate your ListView component with said DataSource. It also requires you to define a `renderRow` callback, which will take individual blobs from your DataSource array, and return them as renderable components.
 
+_Note: We are using [Immutables](https://facebook.github.io/immutable-js/) for app state management (i.e. `pokemon.get('all')` and `pokemon.set('all', payload)`) and for creating the `ListView.DataSource`_
+
 ```javascript
 class Pokedex extends Component {
   constructor(props) {
