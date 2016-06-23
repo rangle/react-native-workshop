@@ -12,6 +12,7 @@ For this workshop, **we have already done `react-native-init` for you and setup 
 $ git clone https://github.com/rangle/react-native-workshop.git
 $ cd react-native-workshop
 $ npm install
+$ git checkout 1-hello-world
 ```
 
 **Each section of the workshop is available in a separate git branch, so `1-hello-world` is the first one.**  Let's open the project in a text editor to go through the generated code.
