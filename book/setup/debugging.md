@@ -21,6 +21,8 @@ This option allows you to debug your JavaScript code in Google Chrome. The code 
 ### YellowBox
 
 > Using console.warn will display an on-screen log on a yellow background. Click on this warning to show more information about it full screen and/or dismiss the warning.
+> 
+> Use `console.disableYellowBox = true;` to temporarily disable warnings
 
 ![yellow box warning](/img/yellowbox.gif)
 
