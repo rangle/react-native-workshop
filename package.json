@@ -11,7 +11,7 @@
     "react": "15.0.2",
     "react-native": "0.26.0",
     "react-native-keyboard-spacer": "0.2.0",
-    "react-redux": "4.4.5",
+    "react-redux": "4.4.10",
     "redux": "3.5.2",
     "redux-localstorage": "0.4.0",
     "redux-logger": "2.6.1",
