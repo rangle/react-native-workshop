@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "mocha --require react-native-mock/mock --compilers js:babel-core/register test/**/*.spec.js --reporter nyan"
+    "test": "mocha --require react-native-mock/mock --compilers js:babel-core/register test/**/*.spec.js --reporter nyan",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "immutable": "3.8.1",
@@ -16,7 +18,8 @@
     "redux-localstorage": "0.4.0",
     "redux-logger": "2.6.1",
     "redux-thunk": "2.0.1",
-    "reselect": "2.5.1"
+    "reselect": "2.5.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-core": "^6.9.0",
@@ -35,5 +38,6 @@
     "react-native-mock": "^0.1.0",
     "rnpm-plugin-upgrade": "0.26.0",
     "sinon": "^1.17.4"
-  }
+  },
+  "snyk": true
 }
